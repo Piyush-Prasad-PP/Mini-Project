@@ -33,7 +33,6 @@ export default function HomePage() {
             description="Get AI-powered suggestions for possible conditions based on your symptoms."
             link="/symptom-checker"
             linkText="Check Symptoms"
-            dataAiHint="AI diagnosis"
           />
           <FeatureCard
             icon={<BedDouble className="h-10 w-10 text-accent" />}
@@ -41,7 +40,6 @@ export default function HomePage() {
             description="Find live bed availability in hospitals near you. (Demo)"
             link="/bed-availability"
             linkText="Find Beds"
-            dataAiHint="hospital bed"
           />
           <FeatureCard
             icon={<Pill className="h-10 w-10 text-accent" />}
@@ -49,7 +47,6 @@ export default function HomePage() {
             description="Locate nearby medical stores and check for medicine availability. (Demo)"
             link="/medicine-checker"
             linkText="Find Medicine"
-            dataAiHint="pharmacy drugs"
           />
         </div>
       </section>
@@ -78,14 +75,7 @@ export default function HomePage() {
             </ul>
           </div>
           <div>
-            <Image
-              src="https://placehold.co/600x400.png"
-              alt="Healthcare professionals"
-              width={600}
-              height={400}
-              className="rounded-lg shadow-md"
-              data-ai-hint="AI medical"
-            />
+            {/* Image removed from here */}
           </div>
         </div>
       </section>
@@ -99,10 +89,9 @@ interface FeatureCardProps {
   description: string;
   link: string;
   linkText: string;
-  dataAiHint: string;
 }
 
-function FeatureCard({ icon, title, description, link, linkText, dataAiHint }: FeatureCardProps) {
+function FeatureCard({ icon, title, description, link, linkText }: FeatureCardProps) {
   return (
     <Card className="hover:shadow-xl transition-shadow duration-300">
       <CardHeader className="items-center">
@@ -113,7 +102,7 @@ function FeatureCard({ icon, title, description, link, linkText, dataAiHint }: F
       </CardHeader>
       <CardContent className="text-center">
         <CardDescription>{description}</CardDescription>
-        <Image src={`https://placehold.co/300x200.png`} alt={title} width={300} height={200} className="my-4 rounded-md mx-auto" data-ai-hint={dataAiHint}/>
+        {/* Image removed from here */}
         <Button asChild className="mt-4">
           <Link href={link}>{linkText}</Link>
         </Button>
