@@ -1,3 +1,4 @@
+
 "use client";
 
 import { AuthGuard } from "@/components/auth/AuthGuard";
@@ -41,7 +42,7 @@ function PatientDashboardContent() {
     { title: "AI Symptom Checker", description: "Get insights on your symptoms.", icon: Stethoscope, link: "/symptom-checker", cta: "Check Symptoms", dataAiHint: "medical examination", imageUrl: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkb2N0b3J8ZW58MHx8fHwxNzQ5NDE4Mjc0fDA&ixlib=rb-4.1.0&q=80&w=1080" },
     { title: "Bed Availability", description: "Find available hospital beds.", icon: BedDouble, link: "/bed-availability", cta: "Find Beds", dataAiHint: "hospital interior", imageUrl: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxob3NwaXRhbHxlbnwwfHx8fDE3NDk0ODM0ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080" },
     { title: "Medicine Checker", description: "Check medicine availability.", icon: Pill, link: "/medicine-checker", cta: "Find Medicine", dataAiHint: "pharmacy shelf", imageUrl: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8bWVkaWNpbmV8ZW58MHx8fHwxNzQ5NDgzMzYzfDA&ixlib=rb-4.1.0&q=80&w=1080" },
-    { title: "My Health Records", description: "Access your medical history (Demo).", icon: FileText, link: "#", cta: "View Records", dataAiHint: "medical chart", imageUrl: "https://placehold.co/300x150.png" },
+    { title: "My Health Records", description: "Access your medical history (Demo).", icon: FileText, link: "#", cta: "View Records", dataAiHint: "medical chart", imageUrl: "https://images.unsplash.com/photo-1611079830811-865ff4428d17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxub3RlJTIwcGFkfGVufDB8fHx8MTc0OTQ4MzYzNHww&ixlib=rb-4.1.0&q=80&w=1080" },
   ];
 
   return (
@@ -111,3 +112,4 @@ function DashboardCard({ title, description, icon: Icon, link, cta, dataAiHint, 
     </Card>
   );
 }
+
