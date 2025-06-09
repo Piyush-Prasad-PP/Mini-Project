@@ -10,14 +10,13 @@ import { BedDouble, Hospital, MapPin, Search, PlusCircle } from "lucide-react";
 import type { BedAvailability } from "@/types";
 import { useState, useMemo, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { useAuth } from "@/hooks/useAuth";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
 
 const mockBedData: BedAvailability[] = [
-  { id: "1", hospitalName: "City General Hospital", totalBeds: 200, availableBeds: 45, lastUpdated: new Date(Date.now() - 3600 * 1000 * 2).toISOString(), location: "Metropolis", contact: "555-0101" },
-  { id: "2", hospitalName: "St. Luke's Medical Center", totalBeds: 150, availableBeds: 12, lastUpdated: new Date(Date.now() - 3600 * 1000 * 1).toISOString(), location: "Metropolis", contact: "555-0102" },
+  { id: "1", hospitalName: "Bhaskar Medical College and General Hospital", totalBeds: 200, availableBeds: 45, lastUpdated: new Date(Date.now() - 3600 * 1000 * 2).toISOString(), location: "Moinabad", contact: "84132 35446" },
+  { id: "2", hospitalName: "Medvik Hospital", totalBeds: 150, availableBeds: 12, lastUpdated: new Date(Date.now() - 3600 * 1000 * 1).toISOString(), location: "Aziz Nagar", contact: "088863 33205" },
   { id: "3", hospitalName: "Hope County Hospital", totalBeds: 80, availableBeds: 5, lastUpdated: new Date(Date.now() - 3600 * 1000 * 5).toISOString(), location: "Suburbia", contact: "555-0201" },
   { id: "4", hospitalName: "Riverdale Community Clinic", totalBeds: 50, availableBeds: 25, lastUpdated: new Date(Date.now() - 3600 * 1000 * 0.5).toISOString(), location: "Suburbia", contact: "555-0202" },
   { id: "5", hospitalName: "Downtown Emergency Care", totalBeds: 120, availableBeds: 0, lastUpdated: new Date(Date.now() - 3600 * 1000 * 3).toISOString(), location: "Metropolis", contact: "555-0103" },
@@ -121,15 +120,6 @@ export default function BedAvailabilityPage() {
             Find real-time (simulated) bed availability in hospitals.
           </p>
         </header>
-
-        <Image 
-          src="https://placehold.co/1200x300.png" 
-          alt="Hospital exterior" 
-          width={1200} 
-          height={300} 
-          className="w-full h-auto rounded-lg mb-8 object-cover"
-          data-ai-hint="hospital building" 
-        />
 
         <Card className="shadow-lg">
           <CardHeader>
@@ -275,6 +265,3 @@ export default function BedAvailabilityPage() {
     </AuthGuard>
   );
 }
-
-
-    
