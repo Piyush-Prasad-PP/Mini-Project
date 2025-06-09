@@ -14,7 +14,7 @@ interface AuthContextType {
 export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 const mockUsers: Record<Exclude<Role, null>, User> = {
-  patient: { id: "patient1", name: "John Patient", role: "patient", email: "patient@example.com" },
+  patient: { id: "patient1", name: "Shreya", role: "patient", email: "patient@example.com" },
   admin: { id: "admin1", name: "Jane Admin", role: "admin", email: "admin@example.com" },
   pharmacy: { id: "pharmacy1", name: "Pat Pharmacy", role: "pharmacy", email: "pharmacy@example.com" },
 };
