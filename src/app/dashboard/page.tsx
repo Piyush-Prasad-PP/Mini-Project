@@ -39,7 +39,7 @@ export default function DashboardPage() {
 function PatientDashboardContent() {
   const features = [
     { title: "AI Symptom Checker", description: "Get insights on your symptoms.", icon: Stethoscope, link: "/symptom-checker", cta: "Check Symptoms", dataAiHint: "medical examination", imageUrl: "https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNHx8ZG9jdG9yfGVufDB8fHx8MTc0OTQxODI3NHww&ixlib=rb-4.1.0&q=80&w=1080" },
-    { title: "Bed Availability", description: "Find available hospital beds.", icon: BedDouble, link: "/bed-availability", cta: "Find Beds", dataAiHint: "hospital interior", imageUrl: "https://placehold.co/300x150.png" },
+    { title: "Bed Availability", description: "Find available hospital beds.", icon: BedDouble, link: "/bed-availability", cta: "Find Beds", dataAiHint: "hospital interior", imageUrl: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxob3NwaXRhbHxlbnwwfHx8fDE3NDk0ODM0ODZ8MA&ixlib=rb-4.1.0&q=80&w=1080" },
     { title: "Medicine Checker", description: "Check medicine availability.", icon: Pill, link: "/medicine-checker", cta: "Find Medicine", dataAiHint: "pharmacy shelf", imageUrl: "https://placehold.co/300x150.png" },
     { title: "My Health Records", description: "Access your medical history (Demo).", icon: FileText, link: "#", cta: "View Records", dataAiHint: "medical chart", imageUrl: "https://placehold.co/300x150.png" },
   ];
