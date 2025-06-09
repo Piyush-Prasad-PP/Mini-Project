@@ -4,7 +4,7 @@ import { AuthGuard } from "@/components/auth/AuthGuard";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Pill, Store, MapPin, Search, CheckCircle, XCircle, AlertTriangle } from "lucide-react";
+import { Pill, Store, MapPin, Search, CheckCircle, XCircle, AlertTriangle, Loader2 } from "lucide-react";
 import type { PharmacyMedicineAvailability, Medicine } from "@/types";
 import { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
