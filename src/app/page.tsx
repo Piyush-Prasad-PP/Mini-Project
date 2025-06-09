@@ -84,7 +84,7 @@ export default function HomePage() {
               width={600}
               height={400}
               className="rounded-lg shadow-md"
-              data-ai-hint="doctor patient"
+              data-ai-hint="AI medical"
             />
           </div>
         </div>
