@@ -1,3 +1,4 @@
+
 "use client";
 
 import { AuthGuard } from "@/components/auth/AuthGuard";
@@ -27,6 +28,12 @@ function formatLastUpdated(dateString: string) {
   const date = new Date(dateString);
   return date.toLocaleString([], { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
 }
+
+const generateMapsUrl = (address?: string, name?: string) => {
+  const query = address || name;
+  if (!query) return "#"; 
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+};
 
 export default function MedicineCheckerPage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -153,10 +160,15 @@ export default function MedicineCheckerPage() {
                         {getAvailabilityChip(item.availability)}
                       </div>
                     </CardHeader>
-                    <CardContent>
+                    <CardContent className="space-y-2">
                       <p className="text-sm text-muted-foreground">
                         Distance: {item.distance || "N/A"}
                       </p>
+                      <Button asChild variant="outline" size="sm">
+                        <a href={generateMapsUrl(item.pharmacyAddress, item.pharmacyName)} target="_blank" rel="noopener noreferrer">
+                          <MapPin className="mr-2 h-4 w-4" /> View on Map
+                        </a>
+                      </Button>
                     </CardContent>
                     <CardFooter className="text-xs text-muted-foreground">
                       Last updated: {formatLastUpdated(item.lastUpdated)}
