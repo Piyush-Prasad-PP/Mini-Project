@@ -1,3 +1,4 @@
+
 "use client";
 
 import { AuthGuard } from "@/components/auth/AuthGuard";
@@ -12,7 +13,7 @@ export default function PharmacyDashboardPage() {
   const { user } = useAuth();
 
   const pharmacyFeatures = [
-    { title: "Manage Medicine Inventory", description: "Update stock levels and availability.", icon: Pill, link: "/medicine-checker", cta: "Manage Inventory", dataAiHint: "pharmacy inventory" },
+    { title: "Manage Medicine Inventory", description: "Update stock levels and availability.", icon: Pill, link: "/pharmacy/inventory", cta: "Manage Inventory", dataAiHint: "pharmacy inventory" },
     { title: "View Prescription Orders", description: "Process and manage incoming prescriptions (Demo).", icon: ListOrdered, link: "#", cta: "View Orders", dataAiHint: "prescription paper" },
     { title: "Supplier Management", description: "Track orders from suppliers (Demo).", icon: Truck, link: "#", cta: "Manage Suppliers", dataAiHint: "delivery truck" },
     { title: "Pharmacy Settings", description: "Update pharmacy details and operating hours (Demo).", icon: Settings, link: "#", cta: "Store Settings", dataAiHint: "storefront pharmacy" },
