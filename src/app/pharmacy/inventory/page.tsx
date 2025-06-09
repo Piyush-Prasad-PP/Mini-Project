@@ -12,6 +12,7 @@ import { useState, useMemo, useEffect, FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
+import { cn } from "@/lib/utils";
 
 // Define a type for inventory items, extending Medicine with availability
 interface InventoryMedicine extends Medicine {
@@ -224,4 +225,3 @@ export default function PharmacyInventoryPage() {
     </AuthGuard>
   );
 }
-
