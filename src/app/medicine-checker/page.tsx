@@ -93,7 +93,7 @@ export default function MedicineCheckerPage() {
         </header>
         
         <Image 
-          src="https://placehold.co/1200x300.png" 
+          src="https://images.unsplash.com/photo-1619468129361-605ebea04b44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYXB8ZW58MHx8fHwxNzQ5NDg0MTM4fDA&ixlib=rb-4.1.0&q=80&w=1080" 
           alt="Pharmacy interior" 
           width={1200} 
           height={300} 
