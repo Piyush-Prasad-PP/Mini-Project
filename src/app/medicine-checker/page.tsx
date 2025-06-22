@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Pill, Store, MapPin, Search, CheckCircle, XCircle, AlertTriangle, Loader2 } from "lucide-react";
 import type { PharmacyMedicineAvailability, Medicine } from "@/types";
 import { useState, useMemo, useEffect } from "react";
-import Image from "next/image";
 
 const mockMedicines: Medicine[] = [
   { id: "med1", name: "Paracetamol 500mg", genericName: "Acetaminophen" },
@@ -91,15 +90,6 @@ export default function MedicineCheckerPage() {
             Find availability of medicines in nearby pharmacies (simulated).
           </p>
         </header>
-        
-        <Image 
-          src="https://images.unsplash.com/photo-1619468129361-605ebea04b44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYXB8ZW58MHx8fHwxNzQ5NDg0MTM4fDA&ixlib=rb-4.1.0&q=80&w=1080" 
-          alt="Pharmacy interior" 
-          width={1200} 
-          height={300} 
-          className="w-full h-auto rounded-lg mb-8 object-cover"
-          data-ai-hint="pharmacy counter" 
-        />
 
         <Card className="max-w-3xl mx-auto shadow-lg">
           <CardHeader>
@@ -118,11 +108,7 @@ export default function MedicineCheckerPage() {
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="pl-10"
-                  list="medicine-suggestions"
                 />
-                <datalist id="medicine-suggestions">
-                    {mockMedicines.map(med => <option key={med.id} value={med.name} />)}
-                </datalist>
               </div>
               <div className="relative">
                 <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
