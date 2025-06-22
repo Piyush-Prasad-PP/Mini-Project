@@ -108,7 +108,13 @@ export default function MedicineCheckerPage() {
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="pl-10"
+                  list="medicine-suggestions"
                 />
+                <datalist id="medicine-suggestions">
+                  {mockMedicines.map((med) => (
+                    <option key={med.id} value={med.name} />
+                  ))}
+                </datalist>
               </div>
               <div className="relative">
                 <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
