@@ -11,7 +11,7 @@ import { useState, useMemo, useEffect } from "react";
 
 const mockMedicines: Medicine[] = [
   { id: "med1", name: "Paracetamol 500mg", genericName: "Acetaminophen" },
-  { id: "med2", name: "Amoxicillin 250mg", genericName: "Amoxicillin" },
+  { id: "med2", name: "Amoxicillin 250mg", genericName: "Amoxicillin" },0
   { id: "med3", name: "Ibuprofen 200mg", genericName: "Ibuprofen" },
   { id: "med4", name: "Cetirizine 10mg", genericName: "Cetirizine" },
 ];
