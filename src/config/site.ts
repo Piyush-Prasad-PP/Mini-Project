@@ -8,7 +8,6 @@ export const siteConfig = {
 
 export const navItems: NavigationItem[] = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard, roles: ["patient", "admin", "pharmacy"] },
-  { href: "/symptom-checker", label: "Symptom Checker", icon: Stethoscope, roles: ["patient"] },
   { href: "/bed-availability", label: "Bed Availability", icon: BedDouble, roles: ["patient", "admin"] },
   { href: "/medicine-checker", label: "Medicine Checker", icon: Pill, roles: ["patient", "pharmacy"] },
   { 
@@ -49,4 +48,3 @@ export const ROLES: { value: Exclude<Role, null>; label: string; icon: React.Ele
   { value: 'admin', label: 'Hospital Admin', icon: UserCog },
   { value: 'pharmacy', label: 'Pharmacy Staff', icon: ShieldCheck },
 ];
-

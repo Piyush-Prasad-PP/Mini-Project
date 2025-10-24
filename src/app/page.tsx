@@ -26,14 +26,7 @@ export default function HomePage() {
 
       <section id="features" className="mt-20 py-12">
         <h2 className="text-3xl font-bold text-center mb-12 font-headline">Our Features</h2>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <FeatureCard
-            icon={<Lightbulb className="h-10 w-10 text-accent" />}
-            title="AI Symptom Checker"
-            description="Get AI-powered suggestions for possible conditions based on your symptoms."
-            link="/symptom-checker"
-            linkText="Check Symptoms"
-          />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <FeatureCard
             icon={<BedDouble className="h-10 w-10 text-accent" />}
             title="Bed Availability Tracker"

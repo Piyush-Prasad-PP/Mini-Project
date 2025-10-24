@@ -39,7 +39,6 @@ export default function DashboardPage() {
 
 function PatientDashboardContent() {
   const features = [
-    { title: "AI Symptom Checker", description: "Get insights on your symptoms.", icon: Stethoscope, link: "/symptom-checker", cta: "Check Symptoms" },
     { title: "Bed Availability", description: "Find available hospital beds.", icon: BedDouble, link: "/bed-availability", cta: "Find Beds" },
     { title: "Medicine Checker", description: "Check medicine availability.", icon: Pill, link: "/medicine-checker", cta: "Find Medicine" },
     { title: "My Health Records", description: "Access your medical history (Demo).", icon: FileText, link: "#", cta: "View Records" },
